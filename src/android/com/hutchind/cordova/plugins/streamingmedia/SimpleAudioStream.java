@@ -73,7 +73,7 @@ public class SimpleAudioStream extends Activity implements
 		RelativeLayout.LayoutParams relLayoutParam = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.MATCH_PARENT);
 		mMediaControllerView = new View(this);
 		audioView.addView(mMediaControllerView);
-		setContentView(audioView, relLayoutParam);
+		//setContentView(audioView, relLayoutParam);
 
 		play();
 	}
