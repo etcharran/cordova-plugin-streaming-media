@@ -79,32 +79,32 @@ public class SimpleAudioStream extends Activity implements
 	}
 
 	private void play() {
-		Uri myUri = Uri.parse(mAudioUrl);
-		try {
-			if (mMediaPlayer == null) {
-				mMediaPlayer = new MediaPlayer();
-			} else {
-				try {
-					mMediaPlayer.stop();
-					mMediaPlayer.reset();
-				} catch (Exception e) {
-					Log.e(TAG, e.toString());
-				}
-			}
-			mMediaPlayer.setDataSource(this, myUri); // Go to Initialized state
-			mMediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
-			mMediaPlayer.setOnPreparedListener(this);
-			mMediaPlayer.setOnCompletionListener(this);
-			mMediaPlayer.setOnBufferingUpdateListener(this);
-			mMediaPlayer.setOnErrorListener(this);
-			mMediaController = new MediaController(this);
-
-			mMediaPlayer.prepareAsync();
-
-			Log.d(TAG, "LoadClip Done");
-		} catch (Throwable t) {
-			Log.d(TAG, t.toString());
-		}
+		//Uri myUri = Uri.parse(mAudioUrl);
+		//try {
+		//	if (mMediaPlayer == null) {
+		//		mMediaPlayer = new MediaPlayer();
+		//	} else {
+		//		try {
+		//			mMediaPlayer.stop();
+		//			mMediaPlayer.reset();
+		//		} catch (Exception e) {
+		//			Log.e(TAG, e.toString());
+		//		}
+		//	}
+		//	mMediaPlayer.setDataSource(this, myUri); // Go to Initialized state
+		//	mMediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
+		//	mMediaPlayer.setOnPreparedListener(this);
+		//	mMediaPlayer.setOnCompletionListener(this);
+		//	mMediaPlayer.setOnBufferingUpdateListener(this);
+		//	mMediaPlayer.setOnErrorListener(this);
+		//	mMediaController = new MediaController(this);
+//
+		//	mMediaPlayer.prepareAsync();
+//
+		//	Log.d(TAG, "LoadClip Done");
+		//} catch (Throwable t) {
+		//	Log.d(TAG, t.toString());
+		//}
 	}
 
 	@Override
